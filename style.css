@@ -1,0 +1,419 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: none;
+}
+
+body{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+header{
+    display: flex;
+    width: 100vw;
+    height: 15vh;
+    background-color: white;
+    justify-content: space-around;
+}
+
+a{
+    text-decoration: none;
+}
+
+hr{
+    border: 1px solid rgb(175, 19, 214);
+}
+
+.esquerda{
+    height: 10vh;
+    width: 10vw;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgb(175, 19, 214);
+}
+
+.esquerda img{
+    margin-right: 1em;
+}
+
+.centro{
+    width: 30vw;
+    background-color: azure;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 4rem;
+    margin-left: -1em;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+
+.centro a{
+    font-size: 25px;
+    transition: font-size 0.5s ease;
+    
+}
+
+.centro a:hover{
+    font-size: 28px;
+    border: none;
+    border-top: 2px solid black;
+}
+
+.perfil{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 14vw;
+    height: auto;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+
+.perfil h3{
+    border: none;
+    border-right: 2px solid gray;
+    padding: 1em;
+}
+
+.perfil img{
+    border-radius: 2em;
+    width: 4rem;
+    transition: all 0.3s;
+}
+
+.perfil img:hover{
+    transform: scale(1.5);
+}
+
+.botoes{
+    display: flex;
+    width: 10vw;
+    justify-content:space-around ;
+    align-items: center;
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid gray;
+}
+
+.botoes a:hover{
+    font-size: 2rem;
+    color: gray;
+}
+
+main{
+    height: 100%;
+    display: flex;
+}
+
+.side-bar{
+    width: 16%;
+    background-color: white;
+    height: 85vh;
+    display: block;
+}
+
+.conteudo1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 75%;
+    color: white;
+}
+
+ul{
+    width: 10vw;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-left: 4em;
+}
+  
+li{
+    display: block;
+    margin: 20px;
+}
+
+.conteudo1 ul a{
+    font-size: 25px;
+    transition: font-size 0.5s ease;
+}
+  
+.conteudo1 ul a:hover {
+    font-size: 28px;
+    color: black;
+}
+
+.conteudo2{
+    height: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 4rem;
+}
+
+hr{
+    width: 100%;
+
+}
+
+.conteudo3{
+    display: flex;
+    flex-direction: column;
+    height: 79vh;
+    width: auto;
+    margin-top: 3em;
+    margin-left: 8em;
+}
+
+h2{
+    font-size: 32pt;
+}
+
+
+
+/*estilizando o formulario*/
+
+form{
+    display: flex;
+}
+
+.procura1{
+    background-color: rgba(173, 173, 173, 0.712);
+    width: 15vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[type="text"]{
+    width: 100%;
+    height: 40px;
+    padding: auto;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    font-size: 14px;
+    outline: none;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+
+.procura2{
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2em 0 5em;
+    font-size: 14pt;
+    border: none;
+}
+
+.procura2 select{
+    display: flex;
+    align-items: flex-end;
+    text-align: left;
+    font-size: 14pt;
+    width: 11vw;
+    height: 40px;
+    background-color: white;
+    border: none;
+    border-bottom: 2px solid #ccc;
+    padding: auto;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+    margin-left: -2em;
+}
+
+.procura2 button{
+    margin-left: 3em;
+    height: 6vh;
+    width: 6vw;
+    border-radius: 1.3em;
+    font-size: 15pt;
+}
+
+.procura2 button:hover{
+    background-color: rgba(44, 41, 41, 0.76);
+}
+
+/*fim formulario*/
+
+.botoes2{
+    margin-top: 1em;
+    height: auto;
+    width: 100%;
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em 0;
+}
+
+.botoes2 button{
+    height: 18vh;
+    width: 13vw;
+    display: flex;
+    text-align: left;
+    flex-direction: column;
+}
+
+.elementos{
+    display:flex;
+    height: 2em;
+    width: 5em;
+    font-size: 16pt;
+}
+
+.elementos h3{
+    margin-left: 1em;
+}
+
+.ver-mais{
+    margin-top: 5em;
+    height: 2vh;
+    margin-left: 1rem;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.botao1:hover{
+    transform: translateY(-3px);
+}
+
+.texto{
+    font-size: 14pt;
+}
+
+.titulo-group{
+    height: 6vh;
+    width: 100%;
+    display: flex;
+    font-size: 14pt;
+    border: none;
+    border-bottom: 2px solid gray;
+    align-items: center;
+    padding: 1em 0;
+}
+
+.last-tranfers{
+    width: 30%;
+    height: 90%;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    border: none;
+    border-right: 2px solid gray;
+}
+
+.filtro{
+    width: 60%;
+    height: 90%;
+    display: flex;
+    align-items: center;
+    margin-left: 1em;
+    justify-content: space-between;
+    background-color: #ccc;
+}
+
+.filtro-botoes{
+    display: flex;
+    height: auto;
+    width: auto;
+    background-color: #ccc;
+}
+
+.group-transfers{
+    height: 100%;
+    width: 100%;
+    border: none;
+    margin-top: 1em;
+    background-color: white;
+    display:flex;
+    flex-direction: column;
+}
+
+.pagamento1{
+    width: 100%;
+    height: 8vh;
+    background-color: gray;
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.icon{
+    height: 6vh;
+    width: 4vw;
+    background-color: #ccc;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 1em;
+}
+
+.conteudo-pagamento{
+    height: auto;
+    width: auto;
+    display: flex;
+    align-items: flex-start;
+    justify-content: left;
+    flex-direction: column;
+    background-color: gray;
+    margin-left: 2em;
+}
+
+.tela2{
+    width: 100%;
+    height: 79vh;
+    background-color: white;
+    margin-top: 3em;
+    margin-left: 6em;
+    margin-right: 2em;
+    display: flex;
+    flex-direction: column;
+    border-bottom: 1px solid rgb(175, 19, 214);
+}
+
+.options-cartao{
+    display: flex;
+    justify-content: space-between;
+    margin: 1em;
+    font-size: 16pt;
+}
+.options-cartao button{
+    height: 4em;
+    width: 4em;
+    border-radius: 1em;
+}
+
+.gastos-totais{
+    background-color: gray;
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    height: auto;
+}
+
+.credito-debito-pix{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.numeros-gastos{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin-left: 9em;
+    font-size: 14pt;
+}
+
+.gasto-titulo{
+    border: none;
+    border-bottom: 2px solid violet;
+    padding: 1rem;
+}
